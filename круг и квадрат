@@ -1,0 +1,41 @@
+// помещается ли квадрат в круг
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+   double S1=25;  //площадь круга
+   double S2=8;  //площад квадрата
+   double R=Math.sqrt(S1/Math.PI);
+   double a=Math.sqrt(S2);
+   double Q=2*(Math.sqrt(R));
+   if (a<=Q){
+     System.out.println("квадрат помещается в круг");
+   }
+    else {
+      System.out.println("квадрат не помещается в круг");
+    }
+
+    }
+}
+
+// помещается ли круг в квадрат
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+   double S1=25;  //площадь круга
+   double S2=64;  //площад квадрата
+   double D=2*(Math.sqrt(S1/Math.PI));
+   double a=Math.sqrt(S2);
+ //  double Q=2*(Math.sqrt(R));
+   if (D<a){
+     System.out.println("круг  помещается в квадрат");
+   }
+    else {
+      System.out.println("круг не помещается в квадрат");
+    }
+
+    }
+}
