@@ -1,0 +1,264 @@
+// МАССИВЫ
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      int[] array1 = new int[5];  //Создание массива длиной 5(первый элемент =0 последний =4)
+     // System.out.println(array1[0]);  //Вывод первого элемента массива
+      
+      array1[3] = 5;    // Задаем элемент массива (4 элемент =5)
+      array1[0] = 1;  
+      System.out.println(array1[0]);
+      System.out.println(array1[1]);
+      System.out.println(array1[2]);
+      System.out.println(array1[3]);
+      System.out.println(array1[4]);
+      
+      /*  
+      String[] array2 = new String[5];   //Создание строкового массива
+      System.out.println(array2[0]);
+      */
+  }
+}
+
+import java.util.*;
+import java.util.Scanner;  //Подключаем библиотеку Scanner 
+
+public class Main {
+  
+    //метод печати массива
+    public static void printArray(int[] array){       //yf вход метод принимает массив
+      for(int i=0; i<array.length; i++){
+        System.out.print(array[i] + " ");
+      }
+      System.out.println();
+    }
+    
+    //Создаем функцию которая будет считывать массив из  STDIN 
+    public static int[] scanArray(int n) {     //на вход она принимает какую-то длину массива
+      int[] array = new int[n];   //Создаем массив длины n
+      Scanner sc = new Scanner(System.in);   //Инициализируем переменную Scanner 
+      
+      for(int i=0; i<array.length; i++){
+        array[i] = sc.nextInt();   //В элементы массива записываем данные со сканера
+        
+      }
+      return array;   //возвращаем массив
+    }
+  
+    public static void main(String[] args) {
+      
+      //создаем массива
+      int[] array = scanArray(10);    //записываем данные со сканера
+      printArray(array);
+      
+      /*
+      int[] array1 = new int[5];  //Создание массива длиной 5(первый элемент =0 последний =4)
+     // System.out.println(array1[0]);  //Вывод первого элемента массива
+      
+      array1[3] = 5;    // Задаем элемент массива (3 элемент =5)
+      array1[0] = 1;  
+      System.out.println(array1[0]);
+      System.out.println(array1[1]);
+      System.out.println(array1[2]);
+      System.out.println(array1[3]);
+      System.out.println(array1[4]);
+      
+      
+      
+      int[] array3 = {1, 3, 5, 6, 8, 10, 12, 15};  //Инициализация массива в явном виде
+      printArray(array3);   //вызов функции печати массива для массива array3
+      
+      
+      int l = array3.length;    //передаем l длину массива (length) array3
+      System.out.println(l);   //Вывод длины массива
+      
+        
+      String[] array2 = new String[5];   //Создание строкового массива
+      System.out.println(array2[0]);
+      */
+  }
+}
+
+import java.util.*;
+import java.util.Scanner;  //Подключаем библиотеку Scanner 
+import java.util.Random;  //Подключаем библиотеку Random 
+
+public class Main {
+  
+    //метод печати массива
+    public static void printArray(int[] array){       //yf вход метод принимает массив
+      for(int i=0; i<array.length; i++){
+        System.out.print(array[i] + " ");
+      }
+      System.out.println();
+    }
+    
+    //Создаем функцию которая будет считывать массив из  STDIN 
+    public static int[] scanArray(int n) {     //на вход она принимает какую-то длину массива
+      int[] array = new int[n];   //Создаем массив длины n
+      Scanner sc = new Scanner(System.in);   //Инициализируем переменную Scanner 
+      
+      for(int i=0; i<array.length; i++){
+        array[i] = sc.nextInt();   //В элементы массива записываем данные со сканера
+        
+      }
+      return array;   //возвращаем массив
+    }
+    
+    //Создаем функцию для генерации массива
+    public static int[] generateArray(int n){ //на вход она принимает какую-то длину массива
+      int[] array = new int[n];  //создаем массив целых чисел размерности n
+      Random r = new Random();  //Создаем переменную Random
+      for(int i=0; i<array.length; i++){
+        array[i] = r.nextInt(100);   //генерируем элемент массива от 0 до 100
+      }
+      return array;      
+    }  
+  
+    public static void main(String[] args) {
+      int[] array = generateArray(10);    //массив из 10 элементов
+      printArray(array);
+ 
+  }
+}
+
+import java.util.*;
+import java.util.Scanner;  //Подключаем библиотеку Scanner 
+import java.util.Random;  //Подключаем библиотеку Random 
+
+public class Main {
+  
+    //метод печати массива
+    public static void printArray(double[] array){       //yf вход метод принимает массив
+      for(int i=0; i<array.length; i++){
+        System.out.printf("%.2f \t", array[i]);
+      }
+      System.out.println();
+    }
+    
+    //Создаем функцию которая будет считывать массив из  STDIN 
+    public static double[] scanArray(int n) {     //на вход она принимает какую-то длину массива
+      double[] array = new double[n];   //Создаем массив длины n
+      Scanner sc = new Scanner(System.in);   //Инициализируем переменную Scanner 
+      
+      for(int i=0; i<array.length; i++){
+        array[i] = sc.nextDouble();   //В элементы массива записываем данные со сканера
+        
+      }
+      return array;   //возвращаем массив
+    }
+    
+    //Создаем функцию для генерации массива
+    public static double[] generateArray(int n){ //на вход она принимает какую-то длину массива
+      double[] array = new double[n];  //создаем массив целых чисел размерности n
+      Random r = new Random();  //Создаем переменную Random
+      for(int i=0; i<array.length; i++){
+        array[i] = r.nextInt(100);   //генерируем элемент массива от 0 до 100
+      }
+      return array;      
+    }  
+    
+    //функция увеличения элементов массива
+    public static double[] multiplyArrayByNumber(double[] array, double number) {
+      for(int i=0; i<array.length; i++){
+        array[i] = array[i]*number;  //берем элемент массива и умножаем на число
+      }
+      return array;
+    }
+    
+    //разделить на первый элемент
+    public static double[] divideArrayByFirstElement(double[] array) {
+      double temp = array[0];  //создаем врем.перем. ипомещаем в нее первый элемент
+      for(int i=0; i<array.length; i++){
+        array[i] = array[i]/temp;  //делим на первый элемент массива
+      }
+      return array;
+    }
+  
+    public static void main(String[] args) {
+      double[] array = generateArray(5);  
+      printArray(array);
+       //нашей функции подаем на вход массив и число
+      multiplyArrayByNumber(array, 5); 
+      printArray(array);
+      
+      divideArrayByFirstElement(array); 
+      printArray(array);
+ 
+  }
+}
+
+import java.util.*;
+import java.util.Scanner;  //Подключаем библиотеку Scanner 
+import java.util.Random;  //Подключаем библиотеку Random 
+
+public class Main {
+  
+    //метод печати массива
+    public static void printArray(double[] array){       //yf вход метод принимает массив
+      for(int i=0; i<array.length; i++){
+        System.out.printf("%.2f \t", array[i]);
+      }
+      System.out.println();
+    }
+    
+    //Создаем функцию которая будет считывать массив из  STDIN 
+    public static double[] scanArray(int n) {     //на вход она принимает какую-то длину массива
+      double[] array = new double[n];   //Создаем массив длины n
+      Scanner sc = new Scanner(System.in);   //Инициализируем переменную Scanner 
+      
+      for(int i=0; i<array.length; i++){
+        array[i] = sc.nextDouble();   //В элементы массива записываем данные со сканера
+        
+      }
+      return array;   //возвращаем массив
+    }
+    
+    //Создаем функцию для генерации массива
+    public static double[] generateArray(int n){ //на вход она принимает какую-то длину массива
+      double[] array = new double[n];  //создаем массив целых чисел размерности n
+      Random r = new Random();  //Создаем переменную Random
+      for(int i=0; i<array.length; i++){
+        array[i] = r.nextInt(100);   //генерируем элемент массива от 0 до 100
+      }
+      return array;      
+    }  
+    
+    //функция увеличения элементов массива
+    public static double[] multiplyArrayByNumber(double[] array, double number) {
+      for(int i=0; i<array.length; i++){
+        array[i] = array[i]*number;  //берем элемент массива и умножаем на число
+      }
+      return array;
+    }
+    
+    //разделить на первый элемент
+    public static double[] divideArrayByFirstElement(double[] array) {
+      double temp = array[0];  //создаем врем.перем. ипомещаем в нее первый элемент
+      for(int i=0; i<array.length; i++){
+        array[i] = array[i]/temp;  //делим на первый элемент массива
+      }
+      return array;
+    }
+    
+    //ищем все не отрицательные элементы
+    public static void printNonNegative(double[] array) {
+       for(int i=0; i<array.length; i++){
+         if(array[i]>=0){
+           System.out.print(array[i] + "\t");
+         }
+       }
+       System.out.println();
+    }
+  
+    public static void main(String[] args) {
+      double[] array ={-2, 0, -3, -6, 5, -3};  
+      printArray(array);
+      
+      printNonNegative(array);
+     
+ 
+  }
+}
