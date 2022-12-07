@@ -1,0 +1,32 @@
+//сравнивание содержимого числа
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      //      System.out.println("Hello, World!");
+     // Scanner sc=new Scanner(System.in);
+    //  int p=sc.nextInt();
+
+    int z=14;
+    int a=z/10;
+    int b=z%10;
+   // System.out.println(a);
+  //  System.out.println(b);
+    int sum=a+b;
+
+    if (sum>=10){
+      System.out.println(sum+"\t" +"данное чилсо является 2-х значным");
+    }
+    else {
+            System.out.println(sum+"\t" +"данное чилсо не является 2-х значным");
+    }
+      if (sum>z){
+        System.out.println("сумма a+b больше числа z");
+      }
+      else {
+        System.out.println("сумма a+b="+sum +" менше числа z");
+      }
+
+
+  }
+}
