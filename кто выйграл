@@ -1,0 +1,29 @@
+// кто выйграл
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      //      System.out.println("Hello, World!");
+
+ Scanner sc=new Scanner(System.in);
+ int p=sc.nextInt();
+    if(p==3){
+      System.out.println("команда Выйграла игру\n"+ "количество очков\t\t"+3);
+    }
+    else {
+      if(p==1){
+        System.out.println("команда сыграла в ничью\n"+ "количество очков\t\t"+1);
+      }
+      else {
+        if(p==0){
+          System.out.println("команда проиграла\n"+ "количество очков\t\t"+0);
+        }
+        else {
+          System.out.println("результыт введен не верно");
+        }
+      }
+    }
+
+      
+  }
+}
