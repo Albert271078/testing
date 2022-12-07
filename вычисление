@@ -1,0 +1,39 @@
+/*
+вычеслить сумму  1+1/2+1/2+...+1/т
+*/
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    double result = 0;
+        int a=10;
+        for(int i=1;i<a;i++){
+            result+=(double)1/i;
+        //    System.out.println(result);
+        }
+         System.out.printf("%.3f", result);
+    
+    }
+}
+
+
+/*
+Сумма всех целых чисел от a до b  (b>=a)
+*/
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    double result = 0;
+        int a=10;
+        int b=30;
+        int sum=0;
+        for(int i=a;i<=b;i++){
+          sum=sum + i;
+         // System.out.println(i);
+         // System.out.println(sum);
+        }
+        System.out.println(sum);
+ 
+    }
+}
