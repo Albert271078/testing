@@ -1,0 +1,29 @@
+//про вес 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+    int w=95;
+    if(w>=75){
+      if(w>=91){
+        System.out.println("супертяжелый вес");
+      }
+      else {
+        System.out.println("тяжелый вес");
+      }
+      
+    }
+      else {
+        if(w>=60){
+          System.out.println("средний вес");
+        }
+        else {
+          System.out.println("легкий вес");
+        }
+      }
+    
+    
+
+    }
+}
