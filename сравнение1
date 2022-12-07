@@ -1,0 +1,21 @@
+//если корень из b<a то умножаем b*5
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      //      System.out.println("Hello, World!");
+     // Scanner sc=new Scanner(System.in);
+    //  int p=sc.nextInt();
+
+  double a=8;
+  double b=16;
+  double x=Math.sqrt(b);
+   System.out.println("корень из b="+x);
+  if (x<a){
+     b=b*5;
+  }
+  System.out.println(b);
+      
+      
+    }
+}
