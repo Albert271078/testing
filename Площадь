@@ -1,0 +1,21 @@
+//Площадь 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      //      System.out.println("Hello, World!");
+     // Scanner sc=new Scanner(System.in);
+    //  int p=sc.nextInt();
+     double a=5;
+     double R=2;
+     double S1=Math.PI*R*R;
+     double S2=a*a;
+     if (S1>S2){
+       System.out.println("Площадь круга больше \t" + S1);
+     }
+     else {
+              System.out.println("Площадь квадрата больше\t" + S2);
+     }
+      
+  }
+}
